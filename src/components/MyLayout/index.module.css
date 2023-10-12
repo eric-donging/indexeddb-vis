@@ -1,0 +1,73 @@
+.layout{
+    height: 100vh;
+    min-width: 1200px;
+    overflow: auto;
+}
+
+.header{
+    height: 50px!important;
+    display: flex;
+    padding: 0 !important;
+    padding-left: 50px !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .left{
+    display: flex;
+}
+
+.header .right{
+    width: 87px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.header .right .avatar{
+    flex: 0 0 40px;
+    width: 40px;
+}
+.header .right .txt{
+    width: 47px;
+    height: 100%;
+    line-height: 50px;
+    flex: 0 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.header .title{
+    color: #fff;
+    line-height: 50px;
+    font-size: 22px;
+    margin-right: 40px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.header .title .icon{
+    color: #fff;
+    font-size: 30px;
+    margin-right: 6px;
+    vertical-align: -3px;
+}
+
+.header .title span{
+    font-weight: bold;
+}
+
+.content{
+    height: calc(100vh - 50px);
+}
+
+.addText{
+    font-size: 12px;
+    color: #000;
+    cursor: pointer;
+}

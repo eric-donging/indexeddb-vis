@@ -1,0 +1,61 @@
+.wrap{
+    box-sizing: border-box;
+    overflow: auto;
+    overflow-x: hidden;
+    background: #fff;
+    position: relative;
+}
+
+.resizeRight{
+    width: 10px!important;
+}
+.resizeRight:hover{
+    width: 10px!important;
+    background: #99b7e0;
+}
+.resizeRightDrag{
+    width: 10px!important;
+    background: #99b7e0;
+}
+
+.wrap .contentWrap{
+    height: 100%;
+}
+
+.contentWrap .empty{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title{
+    height: 46px;
+    line-height: 46px;
+    box-sizing: border-box;
+    padding: 0px 15px;
+    border-bottom: 1px solid #eee;
+    background-color: #fff;
+}
+.title .txt{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title .icon{
+    cursor: pointer;
+}
+
+
+/* 右侧选项卡 */
+.tabs{
+    height: 100%;
+    flex: 1 1 auto;
+    background-color: #fff;
+    margin-left: 6px;
+}
+
+.tabs div[class="ant-tabs-content ant-tabs-content-top"],
+    .tabs div[class="ant-tabs-content ant-tabs-content-top"] > div{
+    height: 100%;
+}

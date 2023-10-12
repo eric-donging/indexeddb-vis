@@ -1,0 +1,19 @@
+.list{
+    position: absolute;
+    width: 110px;
+    font-size: 19px;
+    cursor: pointer;
+    background-color: #fff;
+    box-shadow: var(--popup-local-shadow,0 2px 4px 0 rgba(0,0,0,.16));
+}
+
+.listItem{
+    height: 32px;
+    font-size: 12px;
+    border-block-end: 0px solid transparent !important;
+    text-indent: 4px;
+}
+
+.listItem:hover{
+    background: #eee;
+}

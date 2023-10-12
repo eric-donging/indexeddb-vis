@@ -1,0 +1,23 @@
+.smallFont{
+    font-size: 13px;
+}
+
+.tabs{
+    height: 89px;
+}
+
+.opWrap{
+    width: 97%;
+    height: calc(100vh - 110px);
+    overflow: auto;
+    margin: 0 auto;
+}
+.opWrap .upload{
+    width: 300px;
+    height: 125px;
+    margin: 0 auto;
+}
+.opWrap .fields{
+    margin-top: 20px;
+    width: 100%;
+}

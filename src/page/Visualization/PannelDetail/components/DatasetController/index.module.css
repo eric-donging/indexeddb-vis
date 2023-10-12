@@ -1,0 +1,201 @@
+.container{
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    border-right: 1px solid #e5e5e5;
+    height: 100%;
+    z-index: 3;
+}
+
+.containerCollapse{
+    position: relative;  /* 把这个忘了下面展开收缩的图标就没参考了 */
+    width: 0px;
+    /* z-index: 3; */
+}
+
+/* 展开收缩图标 */
+.expand{
+    right: -10px;
+    top: 50%;
+    margin-top: -22px;
+    z-index: 2;
+    rotate: 180deg;
+}
+.expandCollapse{
+    left: -10px;
+    top: 50%;
+    margin-top: -22px;
+    z-index: 2;
+}
+
+
+.resizeContainer{
+    height: 100% !important;
+    background: #fff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.resizeCollapse{
+    transform: translateX(-100%);
+}
+
+/* resize阴影效果 */
+.resizeRight{
+    width: 10px!important;
+    z-index: 2;
+}
+.resizeRight:hover{
+    width: 10px!important;
+    background: #99b7e0;
+}
+.resizeRightDrag{
+    width: 10px!important;
+    background: #99b7e0;
+    z-index: 2;
+}
+
+.resizeBottom,
+.resizeTop{
+    height: 6px!important;
+}
+.resizeBottom:hover,
+.resizeTop:hover{
+    height: 6px!important;
+    background: #99b7e0;
+}
+.resizeBottomDrag,
+.resizeTopDrag{
+    height: 6px!important;
+    background: #99b7e0;
+}
+
+
+/* resize大小、布局样式 */
+.setWrap{
+    flex: 0 0 auto;
+    width: 100%;
+    z-index: 1;
+    border-bottom: 1px solid #e5e5e5;
+    box-sizing: border-box;
+}
+
+.metric{  /* 这里样式把维度度量单词搞反了 */
+    flex: 1 1 auto;
+    min-height: 3px;
+    border-bottom: 1px solid #e5e5e5;
+    box-sizing: border-box;
+}
+
+.attributeWrap{
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+
+.set,
+.metric,
+.attribute{
+    height: 100%;
+    overflow: auto;
+}
+
+.title{
+    height: 24px;
+    box-sizing: border-box;
+    padding: 0 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f3f3f3;
+}
+
+.list{
+    width: 100%;
+    height: calc(100% - 24px);
+    overflow-y: scroll;
+    margin: 0;
+    padding: 0 4px;
+    list-style: none;
+}
+.list li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    height: 24px;
+    line-height: 24px;
+    box-sizing: border-box;
+    padding: 0 4px;
+    margin-bottom: 2px;
+    font-size: 12px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.set .list li:hover{
+    background: #e8f2ff;
+}
+.set .list li.active{
+    background: #e0f1ff;
+}
+
+.list li .isShow{
+    visibility: hidden;
+}
+.list li i{
+    font-size: 12px;
+    margin-right: 6px;
+    font-weight: 600;
+}
+.metric .list li:hover{
+    background: #69b1ff;
+}
+.attribute .list li:hover{
+    background: #95de64;
+}
+.list li:hover .isShow{
+    visibility: visible;
+}
+.list li:hover i{
+    color: #fff;
+}
+
+.metric .list li,
+.attribute .list li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #e6e9ed;
+}
+
+.list li > span:first-of-type{
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.list li > span:last-of-type{
+    flex: 0;
+    width: 18px;
+}
+
+.listWithCheckbox{
+    padding: 0;
+    overflow: auto;
+    height: calc(100% - 24px);
+}
+.listWithCheckbox li{
+    background: #e6e9ed;
+}
+.listWithCheckbox li:hover{
+    background: #69b1ff;
+}
+
+.addText{
+    font-size: 12px;
+    color: #000;
+}

@@ -1,0 +1,51 @@
+.container{
+    width: 98%;
+    box-sizing: border-box;
+    padding: 20px;
+    background: #fff;
+    margin: 20px auto;
+}
+
+.fn12{
+    font-size: 12px;
+}
+
+.operate{
+    cursor: pointer;
+    color: #1575fa;
+}
+.operate:hover{
+    color: #69b1ff;
+}
+
+.container .table{
+    width: 100%;
+    margin-top: 10px;
+    font-size: 12px !important;
+}
+
+td.tableItem{
+    display: inline-block;
+    height: 49px;
+    line-height: 33px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+th.tableItem{
+    display: inline-block;
+}
+
+.calcWidth1{
+    width: calc((100% - 200px) * 0.1 / 0.86);
+}
+.calcWidth2{
+    width: calc((100% - 200px) * 0.18 / 0.86);
+}
+.calcWidth3{
+    width: calc((100% - 200px) * 0.3 / 0.86);
+}
+.width4{
+    width: 200px;
+}

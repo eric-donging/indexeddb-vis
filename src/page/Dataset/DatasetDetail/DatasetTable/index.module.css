@@ -1,0 +1,58 @@
+.table{
+    width: 100%;
+    overflow-x: auto;
+}
+
+.itemText{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.title{
+    width: 100%;
+    /* background: lime; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title > span.name{
+    display: inline-block;
+    width: 90%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+.menu,
+.menu li{
+    /* background-color: lime; */
+    width: 120px;
+    font-size: 12px;
+}
+
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.subMenu{
+    /* border: 1px solid red; */
+    border: 1px solid rgba(5, 5, 5, 0.06);
+    width: 111px;
+    overflow: hidden;
+}
+
+.subMenu li{
+    width: 100px !important;
+    overflow: auto;
+    font-size: 12px;
+}
+
+.menu li > div,
+.subMenu li{
+    height: 30px !important;
+    line-height: 30px !important;
+}

@@ -1,0 +1,95 @@
+.container{
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    border-right: 1px solid #e5e5e5;
+    height: 100%;
+    background: #fff;
+}
+
+.containerCollapse{
+    position: relative;  /* 把这个忘了下面展开收缩的图标就没参考了 */
+    width: 0px;
+}
+
+.chart{
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+}
+
+.chart .types{
+    /* border: 1px solid green; */
+    /* background-color: lime; */
+    width: 100%;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.chart .types .title{
+    height: 24px;
+    line-height: 24px;
+    padding: 0 8px;
+    background: #f3f3f3;
+}
+
+.types .icons{
+    display: flex;
+    flex-wrap: wrap;
+}
+.types .icons .icon{
+    width: 32px;
+    height: 32px;
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.types .icons .icon:hover{
+    background: #e8f2ff;
+}
+.types .icons .icon.active{
+    background: #e0f1ff;
+}
+
+.chart p{
+    /* font-size: 12px; */
+    color: #919191;
+    padding: 10px;
+    margin: 0px;
+}
+
+
+.chart .config{
+    flex: 1 1 auto;
+    /* background: blue; */
+    /* border: 1px solid blue; */
+    overflow: auto;
+    /* padding: 0px 8px 48px 8px; */
+}
+.config div[role="tablist"]{
+    margin-bottom: 0;
+}
+.config div[class="ant-tabs-tab"],
+.config div[class="ant-tabs-tab ant-tabs-tab-active"]{
+    padding: 4px 12px !important;
+}
+
+
+.resizeContainer{
+    height: 100% !important;
+    background: #fff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.resizeCollapse{
+    display: none;
+    /* transform: translateX(-100%); */
+}
+
+.addText{
+    font-size: 12px;
+    color: #000;
+}

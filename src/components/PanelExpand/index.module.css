@@ -1,0 +1,51 @@
+.expand{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    box-sizing: content-box;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    background-color: #000;
+    opacity: .5;
+    cursor: pointer;
+    transition: transform .3s;
+}
+
+.expand:hover{
+    transform: translate(10px,0);
+}
+
+.expand::before{
+    content: "";
+    position: absolute;
+    display: block;
+    height: 16px;
+    width: 16px;
+    border-right: 24px solid transparent;
+    right: 0;
+    border-top: 16px solid #151b25;
+    border-top-color: #000;
+    bottom: -16px;
+    box-sizing: border-box;
+}
+
+.expand::after{
+    content: "";
+    position: absolute;
+    display: block;
+    height: 16px;
+    width: 16px;
+    border-right: 24px solid transparent;
+    right: 0;
+    border-bottom: 16px solid #151b25;
+    border-bottom-color: #000;
+    top: -16px;
+    box-sizing: border-box;
+}
+
+.expand .icon{
+    margin-left: 9px;
+    /* font-size: 12px; */
+    color: #fff;
+}

@@ -1,0 +1,12 @@
+.isShow{
+    visibility: hidden;
+}
+
+.container:hover .isShow{
+    visibility: visible;
+}
+
+.menu > li{
+    height: 30px !important;
+    line-height: 30px !important;
+}

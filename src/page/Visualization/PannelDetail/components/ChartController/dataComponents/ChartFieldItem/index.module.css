@@ -1,0 +1,46 @@
+.container{
+    height: 24px;
+    line-height: 24px;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 4px;
+    margin-bottom: 2px;
+    cursor: pointer;
+}
+
+.container span{
+    color: #fff;
+    font-weight: 500;
+    overflow: hidden;
+}
+
+.container .txt{
+    flex: 1 0;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.container .icon{
+    cursor: "pointer";
+    color: "#fff";
+    margin-left: 2px;
+}
+
+.blueColor{
+    background: #69b1ff;
+}
+
+.greenColor{
+    background: #95de64;
+}
+
+.menu li[class="ant-menu-item ant-menu-item-only-child"],
+.menu li[class="ant-menu-item ant-menu-item-active ant-menu-item-only-child"],
+.menu li[class="ant-menu-item ant-menu-item-selected ant-menu-item-only-child"],
+.menu li[class="ant-menu-item ant-menu-item-active ant-menu-item-selected ant-menu-item-only-child"]{
+    height: 30px !important;
+    margin: 4px !important;
+    line-height: 30px !important;
+}

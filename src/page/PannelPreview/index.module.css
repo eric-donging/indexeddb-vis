@@ -1,0 +1,16 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+}
+
+.container > header{
+    min-height: 27px;
+    padding: 8px 0;
+    line-height: 27px;
+    text-align: center;
+    /* border-bottom: 1px solid #eee; */
+}
+
+.container > div{
+    height: calc(100vh - 27px - 16px);
+}

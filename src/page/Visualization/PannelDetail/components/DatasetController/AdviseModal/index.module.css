@@ -1,0 +1,29 @@
+.content{
+    height: 100%;
+    overflow-y: auto;
+    box-sizing: border-box;
+    padding-top: 10px;
+}
+.wrap{
+    box-sizing: border-box;
+    border: 1px solid #e5e5e5;
+    margin-top: 8px;
+    height: calc(100% - 36px - 8px);
+    display: flex;
+}
+.wrap .fields{
+    border-right: 1px solid #e5e5e5;
+    height: 100%;
+    background: #fff;
+    overflow: hidden;
+}
+.wrap .fields .types{
+    height: 100%;
+}
+.wrap .fields .title{
+    height: 24px;
+    line-height: 24px;
+    padding-left: 4px;
+    font-size: 12px;
+}
+

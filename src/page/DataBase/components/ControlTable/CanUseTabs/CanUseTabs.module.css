@@ -1,0 +1,25 @@
+.smallFont{
+    font-size: 13px;
+}
+
+.tabs{
+    height: 89px;
+}
+
+.sql{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    overflow: auto;
+}
+.sql .btn{
+    margin: 0px 0px 10px 20px;
+}
+
+.textArea{
+    width: calc(100% - 22px);
+    margin-left: 20px;
+    font-size: 13px !important;
+    font-weight: bold;
+    font-family: Menlo, Monaco, monospace;
+}
